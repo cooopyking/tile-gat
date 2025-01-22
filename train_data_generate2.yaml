@@ -1,0 +1,26 @@
+data_path: 'data/sse50_data_standardization_1.csv'
+save_path: 'data/train2.pkl'
+feature_cols:
+  - open
+  - high
+  - low
+  - close
+  - volume
+  - amount
+
+label_cols:
+  - pctChg_next
+
+codes:
+  # - 'sh.600000'
+  # - 'sh.600009'
+  # - 'sh.600031'
+  # - 'sh.600048'
+
+start_dt: '2024-01-02'
+end_dt: '2024-11-29'
+step: 20
+
+max_lag: 4
+
+threshold: 0.6
